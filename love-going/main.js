@@ -1,12 +1,11 @@
 
 
 const images = [
-    { src: 'PHOTO_2.png', caption: 'Algorave @ Icklectic - London [2023]' },
-    { src: 'PHOTO_3.png', caption: 'Algorave @ Icklectic - London [2023]' },
-    { src: 'PHOTO_4.png', caption: 'ICLC @ System - Shanghai [2024]' },
-    { src: 'PHOTO_5.png', caption: 'ICLC @ System - Shanghai [2024]' },
-    { src: 'PHOTO_6.png', caption: 'ICLC @ System - Shanghai [2024]' }
-
+    { src: 'Images/PHOTO_2.png', caption: 'Algorave @ Icklectic - London [2023]' },
+    { src: 'Images/PHOTO_3.png', caption: 'Algorave @ Icklectic - London [2023]' },
+    { src: 'Images/PHOTO_4.png', caption: 'ICLC @ System - Shanghai [2024]' },
+    { src: 'Images/PHOTO_5.png', caption: 'ICLC @ System - Shanghai [2024]' },
+    { src: 'Images/PHOTO_6.png', caption: 'ICLC @ System - Shanghai [2024]' }
 ];
 
 let currentIndex = 0;
@@ -22,7 +21,6 @@ mainImage.addEventListener('click', () => {
 
 // Initialize the image caption
 imageCaption.textContent = images[currentIndex].caption;
-
 
 
 let hydraCanvas = document.getElementById("hydra-bg");
