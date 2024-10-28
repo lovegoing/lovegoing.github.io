@@ -9,6 +9,11 @@
 	overflow-y: hidden;
 	z-index: -1; /* place behind everything else */
 	display: block;
+    
+}
+
+.intro {
+    max-width: 1000px;
 }
 
 body {
@@ -20,6 +25,27 @@ body {
     font-size: 14px;
     margin: 0;
 }
+
+.top-illustration{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.trail {
+    position: absolute;
+    font-size: 80px; /* Adjust size as needed */
+    color: #cae8ff; /* Adjust color as needed */
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Fades out */
+    pointer-events: none; /* Allows clicking through */
+    transform: translate(-50%, -50%); /* Center the star */
+    filter: blur(5px);
+}
+
+
+
+
+
 
 .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
@@ -85,6 +111,8 @@ h2 {
 }
 
 
+
+
 /* Responsive styles */
 @media (max-width: 600px) {
     #main-image {
@@ -94,5 +122,17 @@ h2 {
     .caption {
         font-size: 12px; /* Smaller font size on mobile */
         padding: 4px 8px; /* Less padding for mobile */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a,p {
+        font-size: 12px; /* Font size for screens 767px wide or smaller (like mobile) */
+    }
+}
+
+@media (max-width: 600px) {
+    .top-illustration {
+        width: 200px; /* Full width on mobile */
     }
 }
